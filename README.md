@@ -1,7 +1,6 @@
 # AI必读论文
 
-<img width="432" height="29" alt="image" src="https://github.com/user-attachments/assets/a4200900-b83c-4d9d-be84-44a297832500" />
-
+## 扩散模型：
 Denoising Diffusion Probabilistic Models
 
 Improved Denoising Diffusion Probabilistic Models
@@ -20,7 +19,7 @@ Stable Diffusion
 
 
 
-Transformer：
+## Transformer：
 
 Attention Is All You Need
 
@@ -32,7 +31,7 @@ Swin Transformer
 
 
 
-并行Transformer-decoder：
+## 并行Transformer-decoder：
 
 DETR: End-to-End Object Detection with Transformers
 
@@ -46,6 +45,6 @@ Scalable Diffusion Models with Transformers (DiT)
 
 
 
-GAN：
+## GAN：
 
 StyleGAN/StyleGAN2
