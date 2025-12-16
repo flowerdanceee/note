@@ -18,6 +18,7 @@ Adding Conditional Control to Text-to-Image Diffusion Models
 Stable Diffusion
 
 
+
 Transformer：
 
 Attention Is All You Need
@@ -27,6 +28,7 @@ An Image is Worth 16x16 Words
 Learning Transferable Visual Models From Natural Language Supervision
 
 Swin Transformer
+
 
 
 并行Transformer-decoder：
@@ -40,6 +42,7 @@ DINO: DETR with Improved DeNoising Anchor Boxes
 Perceiver IO
 
 Scalable Diffusion Models with Transformers (DiT)
+
 
 
 GAN：
