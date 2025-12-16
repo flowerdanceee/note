@@ -277,6 +277,11 @@ import torch.nn.functional as F  # 激励函数都在这
 #         loss = loss_func(output, b_y)   # cross entropy loss
 #         optimizer.zero_grad()           # clear gradients for this training step
 #         loss.backward()                 # backpropagation, compute gradients
+# #       梯度裁剪
+#         torch.nn.utils.clip_grad_norm_(
+#         student.parameters(),
+#         max_norm=1.0
+#         )
 #         optimizer.step()
 #         if step%200==0:
 #             print('Train Epoch:{}[{}/{}({:.0f}%)]'.format(epoch,step*len(b_x),len(train_loader.dataset),100.*step/len(train_loader)))
@@ -579,3 +584,4 @@ import torch.nn.functional as F  # 激励函数都在这
 # # filter(function, iterable)函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件元素组成的新列表。
 # # 接收两个参数，第一个为判断函数，第二个为序列，序列的每个元素作为参数传递给函数进行判断，然后返回 True 或 False。
 # # 最后将返回 True 的元素装进一个filter对象中，可用list()转换。
+
