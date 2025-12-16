@@ -1,5 +1,6 @@
 # AI必读论文
-扩散模型：
+
+<img width="432" height="29" alt="image" src="https://github.com/user-attachments/assets/a4200900-b83c-4d9d-be84-44a297832500" />
 
 Denoising Diffusion Probabilistic Models
 
