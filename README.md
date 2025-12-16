@@ -48,3 +48,10 @@ Scalable Diffusion Models with Transformers (DiT)
 ## GAN：
 
 StyleGAN/StyleGAN2
+
+## 要考虑
+1️⃣ 这篇论文解决了什么“之前做不到的事”
+2️⃣ 它引入了哪一个“新结构 / 新假设”
+3️⃣ 这个思想今天还活着吗？活在哪？
+4️⃣ 如果让我用 HF / PyTorch 实现，核心改哪几行？
+5️⃣ 工业里会不会用？什么时候不用？
