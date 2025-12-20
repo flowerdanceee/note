@@ -47,7 +47,10 @@ Scalable Diffusion Models with Transformers (DiT)
 
 ## GAN：
 
-StyleGAN/StyleGAN2
+StyleGAN/StyleGAN2/StyleGAN3
+
+Which Training Methods for GANs do actually Converge?
+
 
 ## 要考虑
 
