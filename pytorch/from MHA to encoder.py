@@ -26,7 +26,7 @@ class MHA(nn.Module):
         # 拆分qkv：3*[Batch, Token, d_model]
         q, k, v = qkv.chunk(3, dim=-1)
         # 下面拆分多头并为矩阵乘法做前处理
-        # [Batch, Token, dim]变成[Batch, Token, n_head, d_head]变成[Batch, n_head, Token, d_head]
+        # [Batch, Token, d_model]变成[Batch, Token, n_head, d_head]变成[Batch, n_head, Token, d_head]
         q = q.view(n_batch, seq_len, -1, self.d_head).transpose(1, 2)
         k = k.view(n_batch, seq_len, -1, self.d_head).transpose(1, 2)
         v = v.view(n_batch, seq_len, -1, self.d_head).transpose(1, 2)
@@ -39,7 +39,7 @@ class MHA(nn.Module):
             mask = torch.tril(torch.ones(seq_len, seq_len, device=x.device)).bool()
             # 升维
             mask = mask.unsqueeze(0).unsqueeze(0)
-            # mask矩阵[1,1,T,T] 可广播到 [B, n_head, T, T]
+            # mask矩阵[1,1,T,T] 可广播到 [B, n_head, Token, Token]
             # mask == 0 是个判断，表示mask中false的位置被替换为-inf。
             attn = attn.masked_fill(mask == 0, float('-inf'))
         attn = attn.softmax(dim=-1)
