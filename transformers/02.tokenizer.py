@@ -15,8 +15,8 @@ sens = ["弱小的我也有大梦想",
         "有梦想谁都了不起",
         "追逐梦想的心，比梦想本身，更可贵"]
 
-# 常用参数：
 # 使用tokenizer可以直接处理文本序列
+# 常用参数：
 # add_special_tokens参数是句子的开始和结束位置的提示词，具体看模型的设计。
 # max_length是句子的最大长度，一般结合truncation=True使用
 # truncation=True启用序列截断，如果文本长度超过 max_length，自动截断
