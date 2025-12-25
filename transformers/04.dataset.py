@@ -13,6 +13,10 @@ import os
 # streaming=True，在线大数据集不下载至本地。
 dataset1 = ds.load_dataset("csv", data_files="./ChnSentiCorp_htl_all.csv", split="train[:1%]")
 
+# 数据过滤，配合lambda表达式
+dataset1 = dataset1.filter(
+    lambda x: x["review"] is not None and x["label"] is not None
+)
 
 # 一个标准手写 Collator 骨架，实例化之后传入dataloader的collate_fn。
 class MyCollator:
