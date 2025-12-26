@@ -28,7 +28,15 @@ dataset = MyDataset()
 # 划分数据集
 trainset, validset = random_split(dataset, lengths=[0.9, 0.1])
 
-
+# 关键模型输入：
+# input_ids：输入序列
+# attention_mask：防止padding影响self-attention
+# labels：需要去拟合的预测值
+# encoder-only关键输出：
+# last_hidden_state：后续输出计算 loss
+# dencoder-only关键输出：
+# logits：每个位置预测下一个 token 的概率[batch, token, vocab_size]
+# loss：训练
 def collate_func(batch):
     texts, labels = [], []
     for item in batch:
