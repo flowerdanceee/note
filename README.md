@@ -31,20 +31,6 @@ Swin Transformer
 
 
 
-## 并行Transformer-decoder：
-
-DETR: End-to-End Object Detection with Transformers
-
-Deformable DETR: Deformable Transformers for End-to-End Object Detection
-
-DINO: DETR with Improved DeNoising Anchor Boxes
-
-Perceiver IO
-
-Scalable Diffusion Models with Transformers (DiT)
-
-
-
 ## GAN：
 
 StyleGAN/StyleGAN2/StyleGAN3
